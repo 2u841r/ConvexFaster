@@ -7,7 +7,6 @@ import { Toaster } from "sonner";
 import { WelcomeToast } from "./welcome-toast";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ConvexProvider } from "@/components/convex-provider";
 
 export const metadata: Metadata = {
@@ -89,7 +88,6 @@ export default async function RootLayout({
             <Toaster closeButton />
             <WelcomeToast />
           </Suspense>
-          <SpeedInsights />
         </ConvexProvider>
       </body>
     </html>
