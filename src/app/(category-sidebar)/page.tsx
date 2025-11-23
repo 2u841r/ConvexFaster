@@ -7,7 +7,7 @@ import {
 import Image from "next/image";
 
 export default async function Home() {
-
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [collections, categories, counts] = await Promise.all([
     getCollections(),
     getCategories(),

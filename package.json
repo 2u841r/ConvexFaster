@@ -9,7 +9,7 @@
     "predev": "convex dev --until-success && convex dashboard",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "typecheck": "tsc",
     "format:check": "prettier --check .",
     "format": "prettier --write . --list-different"
@@ -38,7 +38,6 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3.3.1",
     "@eslint/js": "^9.39.1",
     "@types/node": "24.10.1",
     "@types/react": "npm:types-react@19.0.0-rc.1",
