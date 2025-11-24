@@ -6,7 +6,8 @@ import {
 } from "@/lib/convex-server";
 
 // Route segment config
-export const runtime = "edge";
+// Note: Edge runtime removed for OpenNext Cloudflare compatibility
+// export const runtime = "edge";
 
 // Image metadata
 export const alt = "About the category";
