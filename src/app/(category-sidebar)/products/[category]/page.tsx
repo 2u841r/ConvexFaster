@@ -32,7 +32,7 @@ export default async function Page(props: {
   ]);
 
   if (!category) {
-    notFound();
+    return notFound();
   }
 
   // Group subcategories by subcollection

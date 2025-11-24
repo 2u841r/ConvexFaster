@@ -25,7 +25,7 @@ export default async function Page(props: {
   ]);
 
   if (!product) {
-    notFound();
+    return notFound();
   }
 
   const currentProductIndex = relatedProducts.findIndex(

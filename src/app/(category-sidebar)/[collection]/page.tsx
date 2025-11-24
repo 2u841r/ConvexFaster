@@ -1,6 +1,7 @@
 import { Link } from "@/components/ui/link";
 import { getCollections, getCategories } from "@/lib/convex-server";
 import Image from "next/image";
+import { notFound } from "next/navigation";
 
 export default async function Home(props: {
   params: Promise<{
@@ -21,7 +22,7 @@ export default async function Home(props: {
     : [];
 
   if (!collection) {
-    return <div>Collection not found</div>;
+    return notFound();
   }
 
   let imageCount = 0;

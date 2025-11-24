@@ -13,7 +13,7 @@ export default async function Layout({
   const category = await getCategoryBySlug(categorySlug);
 
   if (!category) {
-    notFound();
+    return notFound();
   }
 
   return <>{children}</>;
